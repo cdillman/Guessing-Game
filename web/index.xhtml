@@ -11,8 +11,7 @@
         
         <h:panelGrid columns="2">
             
-            <h:form id="checkAnswer"> 
-               <p> <h:commandButton value="new game" action="#{randomNumberBean.newGame()}"/> </p> 
+            <h:form id="checkAnswer">  
                 <h:inputText required="true" requiredMessage="Have to guess to play." value="#{randomNumberBean.guess}" />
                 <h:commandButton value="submit" action="#{randomNumberBean.checkNumber()}"/>
                 <p> <h:outputText value="#{randomNumberBean.msg}"/> </p>
